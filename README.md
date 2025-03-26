@@ -31,13 +31,25 @@ make
 ```
 
 ## Example Commands
-- `list` → Show all running processes
-- `start <program>` → Start a new process
-- `kill <pid>` → Terminate a process by PID
-- `status <pid>` → Show CPU & memory usage of a process
+```bash
+cs205$ run prog x40 40
+cs205$ run prog x50 50
+cs205$ run prog x60 60
+cs205$ run prog x70 70
+cs205$ run prog x80 80
+cs205$ list
+1697479,0
+1697480,0
+1697483,0
+1697486,1
+1697489,1
+cs205$ stop 1697479
+stopping 1697479
+```
 
 ## Contributing
 Feel free to submit issues or pull requests if you'd like to contribute to the project.
 
 ## License
 This project is licensed under the MIT License.
+
